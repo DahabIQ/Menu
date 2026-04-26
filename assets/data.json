@@ -1,54 +1,54 @@
 {
    "cakes": {
-      "image": "/assets/images/categories/الكيـــك.png",
+      "image": "assets/images/categories/الكيـــك.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/الكيـــك/تارت دبي.png",
+            "image": "assets/images/items/الكيـــك/تارت دبي.png",
             "name": "تارت دبي",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/ميني كيك بستاشيو.png",
+            "image": "assets/images/items/الكيـــك/ميني كيك بستاشيو.png",
             "name": "ميني كيك بستاشيو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/سبيسل بستاشيو.png",
+            "image": "assets/images/items/الكيـــك/سبيسل بستاشيو.png",
             "name": "سبيسل بستاشيو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/موس كيك باللوز.png",
+            "image": "assets/images/items/الكيـــك/موس كيك باللوز.png",
             "name": "موس كيك باللوز",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيكة الجزر.png",
+            "image": "assets/images/items/الكيـــك/كيكة الجزر.png",
             "name": "كيكة الجزر",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيكة برتقال.png",
+            "image": "assets/images/items/الكيـــك/كيكة برتقال.png",
             "name": "كيكة برتقال",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/سويس رول.png",
+            "image": "assets/images/items/الكيـــك/سويس رول.png",
             "name": "سويس رول",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/تارت نوتيلا.png",
+            "image": "assets/images/items/الكيـــك/تارت نوتيلا.png",
             "name": "تارت نوتيلا",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيكة فواكة.png",
+            "image": "assets/images/items/الكيـــك/كيكة فواكة.png",
             "name": "كيكة فواكة",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/ميني كيك لوتس.png",
+            "image": "assets/images/items/الكيـــك/ميني كيك لوتس.png",
             "name": "ميني كيك لوتس",
             "price": "4.000"
          },
@@ -57,77 +57,77 @@
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/ريد فيلفت.png",
+            "image": "assets/images/items/الكيـــك/ريد فيلفت.png",
             "name": "ريد فيلفت",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/سان سباستيان.png",
+            "image": "assets/images/items/الكيـــك/سان سباستيان.png",
             "name": "سان سباستيان",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/ميني كيك نوتيلا.png",
+            "image": "assets/images/items/الكيـــك/ميني كيك نوتيلا.png",
             "name": "ميني كيك نوتيلا",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيكة سنيكرز.png",
+            "image": "assets/images/items/الكيـــك/كيكة سنيكرز.png",
             "name": "كيكة سنيكرز",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/تراميسو.png",
+            "image": "assets/images/items/الكيـــك/تراميسو.png",
             "name": "تراميسو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/جيرمن كيك.png",
+            "image": "assets/images/items/الكيـــك/جيرمن كيك.png",
             "name": "جيرمن كيك",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/ليزي كيك.png",
+            "image": "assets/images/items/الكيـــك/ليزي كيك.png",
             "name": "ليزي كيك",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيكة العسل.png",
+            "image": "assets/images/items/الكيـــك/كيكة العسل.png",
             "name": "كيكة العسل",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيك دارك.png",
+            "image": "assets/images/items/الكيـــك/كيك دارك.png",
             "name": "كيك دارك",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/سويس رول شوكولا.png",
+            "image": "assets/images/items/الكيـــك/سويس رول شوكولا.png",
             "name": "سويس رول شوكولا",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/سويس رول لوتس.png",
+            "image": "assets/images/items/الكيـــك/سويس رول لوتس.png",
             "name": "سويس رول لوتس",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/باونتي كيك.png",
+            "image": "assets/images/items/الكيـــك/باونتي كيك.png",
             "name": "باونتي كيك",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/كيكة كراميل.png",
+            "image": "assets/images/items/الكيـــك/كيكة كراميل.png",
             "name": "كيكة كراميل",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/ام علي.png",
+            "image": "assets/images/items/الكيـــك/ام علي.png",
             "name": "ام علي",
             "price": "3.000"
          },
          {
-            "image": "/assets/images/items/الكيـــك/رينبو كيك.png",
+            "image": "assets/images/items/الكيـــك/رينبو كيك.png",
             "name": "رينبو كيك",
             "price": "4.000"
          }
@@ -229,90 +229,90 @@
       ]
    },
    "pide": {
-      "image": "/assets/images/categories/البيـــدا.png",
+      "image": "assets/images/categories/البيـــدا.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/البيـــدا/بيدا دجاج.png",
+            "image": "assets/images/items/البيـــدا/بيدا دجاج.png",
             "name": "بيدا دجاج",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/البيـــدا/بيدا خضار.png",
+            "image": "assets/images/items/البيـــدا/بيدا خضار.png",
             "name": "بيدا خضار",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/البيـــدا/بيدا مارغريتا.png",
+            "image": "assets/images/items/البيـــدا/بيدا مارغريتا.png",
             "name": "بيدا مارغريتا",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/البيـــدا/بيدا ببروني.png",
+            "image": "assets/images/items/البيـــدا/بيدا ببروني.png",
             "name": "بيدا ببروني",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/البيـــدا/بيدا لحم.png",
+            "image": "assets/images/items/البيـــدا/بيدا لحم.png",
             "name": "بيدا لحم",
             "price": "5.000"
          }
       ]
    },
    "hot_drinks": {
-      "image": "/assets/images/categories/المشروبات الساخنة.png",
+      "image": "assets/images/categories/المشروبات الساخنة.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/المشروبات الساخنة/امريكانو.png",
+            "image": "assets/images/items/المشروبات الساخنة/امريكانو.png",
             "name": "امريكانو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/كافية لاتية.png",
+            "image": "assets/images/items/المشروبات الساخنة/كافية لاتية.png",
             "name": "كافية لاتية",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/شاي عراقي.png",
+            "image": "assets/images/items/المشروبات الساخنة/شاي عراقي.png",
             "name": "شاي عراقي",
             "price": "1.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/تورتادو.png",
+            "image": "assets/images/items/المشروبات الساخنة/تورتادو.png",
             "name": "تورتادو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/اسبريسو.png",
+            "image": "assets/images/items/المشروبات الساخنة/اسبريسو.png",
             "name": "اسبريسو",
             "price": "3.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/نسكافية.png",
+            "image": "assets/images/items/المشروبات الساخنة/نسكافية.png",
             "name": "نسكافية",
             "price": "3.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/هوت شوكليت.png",
+            "image": "assets/images/items/المشروبات الساخنة/هوت شوكليت.png",
             "name": "هوت شوكليت",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/كابتشينو.png",
+            "image": "assets/images/items/المشروبات الساخنة/كابتشينو.png",
             "name": "كابتشينو",
             "price": "3.500"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/قهوة جكليتية.png",
+            "image": "assets/images/items/المشروبات الساخنة/قهوة جكليتية.png",
             "name": "قهوة جكليتية",
             "price": "3.000"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/ابريق شاي.png",
+            "image": "assets/images/items/المشروبات الساخنة/ابريق شاي.png",
             "name": "ابريق شاي",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/المشروبات الساخنة/شاي اخضر.png",
+            "image": "assets/images/items/المشروبات الساخنة/شاي اخضر.png",
             "name": "شاي اخضر",
             "price": "1.000"
          }
@@ -361,121 +361,121 @@
       ]
    },
    "kunafa": {
-      "image": "/assets/images/categories/الكنافة.png",
+      "image": "assets/images/categories/الكنافة.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/الكنافة/بقلاوة تركية.png",
+            "image": "assets/images/items/الكنافة/بقلاوة تركية.png",
             "name": "بقلاوة تركية",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/بوكس بقلاوة.png",
+            "image": "assets/images/items/الكنافة/بوكس بقلاوة.png",
             "name": "بوكس بقلاوة",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/كنافة باللوتس.png",
+            "image": "assets/images/items/الكنافة/كنافة باللوتس.png",
             "name": "كنافة باللوتس",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/كنافة فستق عنتابي بجبن.png",
+            "image": "assets/images/items/الكنافة/كنافة فستق عنتابي بجبن.png",
             "name": "كنافة فستق عنتابي بجبن",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/كنافة بستاشيو.png",
+            "image": "assets/images/items/الكنافة/كنافة بستاشيو.png",
             "name": "كنافة بستاشيو",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/كنافة جبن.png",
+            "image": "assets/images/items/الكنافة/كنافة جبن.png",
             "name": "كنافة جبن",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/عنتابية بالقشطة.png",
+            "image": "assets/images/items/الكنافة/عنتابية بالقشطة.png",
             "name": "عنتابية بالقشطة",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/الكنافة/كنافة نوتيلا.png",
+            "image": "assets/images/items/الكنافة/كنافة نوتيلا.png",
             "name": "كنافة نوتيلا",
             "price": "5.000"
          }
       ]
    },
    "cold_drinks": {
-      "image": "/assets/images/categories/مشروبات باردة.png",
+      "image": "assets/images/categories/مشروبات باردة.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/مشروبات باردة/mojito/فراولة.png",
+            "image": "assets/images/items/مشروبات باردة/mojito/فراولة.png",
             "name": "فراولة",
             "price": "4.000",
             "subcategory": "الموهيتو"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/mojito/بلو كرواساو.png",
+            "image": "assets/images/items/مشروبات باردة/mojito/بلو كرواساو.png",
             "name": "بلو كرواساو",
             "price": "4.000",
             "subcategory": "الموهيتو"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/mojito/بلو بيري.png",
+            "image": "assets/images/items/مشروبات باردة/mojito/بلو بيري.png",
             "name": "بلو بيري",
             "price": "4.000",
             "subcategory": "الموهيتو"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/mojito/نعناع.png",
+            "image": "assets/images/items/مشروبات باردة/mojito/نعناع.png",
             "name": "نعناع",
             "price": "4.000",
             "subcategory": "الموهيتو"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/mojito/موهيتو ليمون ونعناع.png",
+            "image": "assets/images/items/مشروبات باردة/mojito/موهيتو ليمون ونعناع.png",
             "name": "موهيتو ليمون ونعناع",
             "price": "4.000",
             "subcategory": "الموهيتو"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/mojito/رقي.png",
+            "image": "assets/images/items/مشروبات باردة/mojito/رقي.png",
             "name": "رقي",
             "price": "4.000",
             "subcategory": "الموهيتو"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/juice/اناناس.png",
+            "image": "assets/images/items/مشروبات باردة/juice/اناناس.png",
             "name": "اناناس",
             "price": "3.500",
             "subcategory": "العصائر"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/juice/فراولة.png",
+            "image": "assets/images/items/مشروبات باردة/juice/فراولة.png",
             "name": "فراولة",
             "price": "4.000",
             "subcategory": "العصائر"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/juice/كيوي.png",
+            "image": "assets/images/items/مشروبات باردة/juice/كيوي.png",
             "name": "كيوي",
             "price": "3.500",
             "subcategory": "العصائر"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/juice/موز وحليب.png",
+            "image": "assets/images/items/مشروبات باردة/juice/موز وحليب.png",
             "name": "موز وحليب",
             "price": "3.500",
             "subcategory": "العصائر"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/juice/كوكتيل.png",
+            "image": "assets/images/items/مشروبات باردة/juice/كوكتيل.png",
             "name": "كوكتيل",
             "price": "4.000",
             "subcategory": "العصائر"
          },
          {
-            "image": "/assets/images/items/مشروبات باردة/juice/برتقال.png",
+            "image": "assets/images/items/مشروبات باردة/juice/برتقال.png",
             "name": "برتقال",
             "price": "3.500",
             "subcategory": "العصائر"
@@ -670,145 +670,145 @@
       ]
    },
    "cheesecake": {
-      "image": "/assets/images/categories/تشيز كيك.png",
+      "image": "assets/images/categories/تشيز كيك.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/تشيز كيك/تشيز كيك بستاشيو.png",
+            "image": "assets/images/items/تشيز كيك/تشيز كيك بستاشيو.png",
             "name": "تشيز كيك بستاشيو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/تشيز كيك/تشيز كيك دبي.png",
+            "image": "assets/images/items/تشيز كيك/تشيز كيك دبي.png",
             "name": "تشيز كيك دبي",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/تشيز كيك/تشيز كيك بلو بيري.png",
+            "image": "assets/images/items/تشيز كيك/تشيز كيك بلو بيري.png",
             "name": "تشيز كيك بلو بيري",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/تشيز كيك/تشيز كيك فراولة.png",
+            "image": "assets/images/items/تشيز كيك/تشيز كيك فراولة.png",
             "name": "تشيز كيك فراولة",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/تشيز كيك/تشيز كيك أوريو.png",
+            "image": "assets/images/items/تشيز كيك/تشيز كيك أوريو.png",
             "name": "تشيز كيك أوريو",
             "price": "4.000"
          },
          {
-            "image": "/assets/images/items/تشيز كيك/تشيز كيك لوتس.png",
+            "image": "assets/images/items/تشيز كيك/تشيز كيك لوتس.png",
             "name": "تشيز كيك لوتس",
             "price": "4.000"
          }
       ]
    },
    "donuts": {
-      "image": "/assets/images/categories/دونـــــات.png",
+      "image": "assets/images/categories/دونـــــات.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/دونـــــات/دونـــات محشي.png",
+            "image": "assets/images/items/دونـــــات/دونـــات محشي.png",
             "name": "دونات محشي",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/دونـــــات/دونـــات محشي شوكولا.png",
+            "image": "assets/images/items/دونـــــات/دونـــات محشي شوكولا.png",
             "name": "دونات محشي شوكولا",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/دونـــــات/دونـــات.png",
+            "image": "assets/images/items/دونـــــات/دونـــات.png",
             "name": "دونات",
             "price": "1.500"
          }
       ]
    },
    "croissant": {
-      "image": "/assets/images/categories/كرواسون.png",
+      "image": "assets/images/categories/كرواسون.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/كرواسون/بستاشيو.png",
+            "image": "assets/images/items/كرواسون/بستاشيو.png",
             "name": "بستاشيو",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/كرواسون/لوتس.png",
+            "image": "assets/images/items/كرواسون/لوتس.png",
             "name": "لوتس",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/كرواسون/فانيلا.png",
+            "image": "assets/images/items/كرواسون/فانيلا.png",
             "name": "فانيلا",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/كرواسون/نوتيلا.png",
+            "image": "assets/images/items/كرواسون/نوتيلا.png",
             "name": "نوتيلا",
             "price": "2.500"
          },
          {
-            "image": "/assets/images/items/كرواسون/سادة.png",
+            "image": "assets/images/items/كرواسون/سادة.png",
             "name": "سادة",
             "price": "2.000"
          },
          {
-            "image": "/assets/images/items/كرواسون/اوريو.png",
+            "image": "assets/images/items/كرواسون/اوريو.png",
             "name": "اوريو",
             "price": "2.500"
          }
       ]
    },
    "brownies": {
-      "image": "/assets/images/categories/براونيز 1.png",
+      "image": "assets/images/categories/براونيز 1.png",
       "list_items": [
          {
-            "image": "/assets/images/items/براونيز/براونيز.png",
+            "image": "assets/images/items/براونيز/براونيز.png",
             "name": "براونيز لوتس",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/براونيز/براونيز.png",
+            "image": "assets/images/items/براونيز/براونيز.png",
             "name": "براونيز كلاسيك",
             "price": "8.000"
          },
          {
-            "image": "/assets/images/items/براونيز/براونيز.png",
+            "image": "assets/images/items/براونيز/براونيز.png",
             "name": "براونيز بتر فلاي",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/براونيز/براونيز.png",
+            "image": "assets/images/items/براونيز/براونيز.png",
             "name": "براونيز بستاشيو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/براونيز/براونيز.png",
+            "image": "assets/images/items/براونيز/براونيز.png",
             "name": "براونيز تشيز اوريو",
             "price": "6.000"
          }
       ]
    },
    "smoothie": {
-      "image": "/assets/images/categories/سموزي.png",
+      "image": "assets/images/categories/سموزي.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/سموزي/سموزي خوخ.png",
+            "image": "assets/images/items/سموزي/سموزي خوخ.png",
             "name": "سموزي خوخ",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/سموزي/سموزي رمان.png",
+            "image": "assets/images/items/سموزي/سموزي رمان.png",
             "name": "سموزي رمان",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/سموزي/سموزي فراولة.png",
+            "image": "assets/images/items/سموزي/سموزي فراولة.png",
             "name": "سموزي فراولة",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/سموزي/سموزي مانجو.png",
+            "image": "assets/images/items/سموزي/سموزي مانجو.png",
             "name": "سموزي مانجو",
             "price": "5.000"
          }
@@ -825,40 +825,40 @@
       ]
    },
    "egyptian_dishes": {
-      "image": "/assets/images/categories/الأطباق المصرية.png",
+      "image": "assets/images/categories/الأطباق المصرية.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/الأطباق المصرية/كيكة دبي.png",
+            "image": "assets/images/items/الأطباق المصرية/كيكة دبي.png",
             "name": "كيكة دبي",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الأطباق المصرية/قشطوطة بستاشيو.png",
+            "image": "assets/images/items/الأطباق المصرية/قشطوطة بستاشيو.png",
             "name": "قشطوطة بستاشيو",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الأطباق المصرية/كشري بستاشيو.png",
+            "image": "assets/images/items/الأطباق المصرية/كشري بستاشيو.png",
             "name": "كشري بستاشيو",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الأطباق المصرية/قشطوطة بالمانجو.png",
+            "image": "assets/images/items/الأطباق المصرية/قشطوطة بالمانجو.png",
             "name": "قشطوطة بالمانجو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/الأطباق المصرية/كشري مانجو.png",
+            "image": "assets/images/items/الأطباق المصرية/كشري مانجو.png",
             "name": "كشري مانجو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/الأطباق المصرية/قشطوطة نوتيلا.png",
+            "image": "assets/images/items/الأطباق المصرية/قشطوطة نوتيلا.png",
             "name": "قشطوطة نوتيلا",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/الأطباق المصرية/كشري نوتيلا.png",
+            "image": "assets/images/items/الأطباق المصرية/كشري نوتيلا.png",
             "name": "كشري نوتيلا",
             "price": "5.000"
          }
@@ -943,10 +943,10 @@
       ]
    },
    "pizza": {
-      "image": "/assets/images/categories/البيتــــزا.png",
+      "image": "assets/images/categories/البيتــــزا.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا مـــــرغريتـــا.png",
+            "image": "assets/images/items/البيتــــزا/بيتزا مـــــرغريتـــا.png",
             "name": "بيتزا مرغريتا",
             "prices": {
                "صغير": "8.000",
@@ -955,7 +955,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا خضـــــــــــار.png",
+            "image": "assets/images/items/البيتــــزا/بيتزا خضـــــــــــار.png",
             "name": "بيتزا خضار",
             "prices": {
                "صغير": "7.000",
@@ -964,7 +964,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا مشكـــــــل.png",
+            "image": "assets/images/items/البيتــــزا/بيتزا مشكـــــــل.png",
             "name": "بيتزا مشكل",
             "prices": {
                "صغير": "8.000",
@@ -973,7 +973,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا لـــــــــــحم.png",
+            "image": "assets/images/items/البيتــــزا/بيتزا لـــــــــــحم.png",
             "name": "بيتزا لحم",
             "prices": {
                "صغير": "8.000",
@@ -982,7 +982,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا ببرونـــــــــي.png",
+            "image": "assets/images/items/البيتــــزا/بيتزا ببرونـــــــــي.png",
             "name": "بيتزا ببروني",
             "prices": {
                "صغير": "8.000",
@@ -991,7 +991,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا فصــــــــول .png",
+            "image": "assets/images/items/البيتــــزا/بيتزا فصــــــــول .png",
             "name": "بيتزا فصول",
             "prices": {
                "صغير": "8.000",
@@ -1000,7 +1000,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا دجـــــــــــاج .png",
+            "image": "assets/images/items/البيتــــزا/بيتزا دجـــــــــــاج .png",
             "name": "بيتزا دجاج",
             "prices": {
                "صغير": "8.000",
@@ -1031,30 +1031,30 @@
       ]
    },
    "pancakes": {
-      "image": "/assets/images/categories/بـــان كيك.png",
+      "image": "assets/images/categories/بـــان كيك.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/بـــان كيك/بــان كيك لوتس.png",
+            "image": "assets/images/items/بـــان كيك/بــان كيك لوتس.png",
             "name": "بان كيك لوتس",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/بـــان كيك/بــان كيك فروت.png",
+            "image": "assets/images/items/بـــان كيك/بــان كيك فروت.png",
             "name": "بان كيك فروت",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/بـــان كيك/بــان كيك اوريو.png",
+            "image": "assets/images/items/بـــان كيك/بــان كيك اوريو.png",
             "name": "بان كيك اوريو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/بـــان كيك/بــان كيك نوتيلا.png",
+            "image": "assets/images/items/بـــان كيك/بــان كيك نوتيلا.png",
             "name": "بان كيك نوتيلا",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/بـــان كيك/بــان كيك بستاشيو.png",
+            "image": "assets/images/items/بـــان كيك/بــان كيك بستاشيو.png",
             "name": "بان كيك بستاشيو",
             "price": "6.000"
          }
@@ -1088,35 +1088,35 @@
       ]
    },
    "milkshake": {
-      "image": "/assets/images/categories/ميلك شيك.png",
+      "image": "assets/images/categories/ميلك شيك.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/ميلك شيك/ميلك شيك بستاشيو.png",
+            "image": "assets/images/items/ميلك شيك/ميلك شيك بستاشيو.png",
             "name": "ميلك شيك بستاشيو",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/ميلك شيك/ميلك شيك نوتيلا.png",
+            "image": "assets/images/items/ميلك شيك/ميلك شيك نوتيلا.png",
             "name": "ميلك شيك نوتيلا",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/ميلك شيك/ميلك شيك لوتس.png",
+            "image": "assets/images/items/ميلك شيك/ميلك شيك لوتس.png",
             "name": "ميلك شيك لوتس",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/ميلك شيك/ميلك شيك كراميل.png",
+            "image": "assets/images/items/ميلك شيك/ميلك شيك كراميل.png",
             "name": "ميلك شيك كراميل",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/ميلك شيك/ميلك شيك فانيلا.png",
+            "image": "assets/images/items/ميلك شيك/ميلك شيك فانيلا.png",
             "name": "ميلك شيك فانيلا",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/ميلك شيك/ميلك شيك فراولة.png",
+            "image": "assets/images/items/ميلك شيك/ميلك شيك فراولة.png",
             "name": "ميلك شيك فراولة",
             "price": "5.000"
          }
@@ -1135,50 +1135,50 @@
       ]
    },
    "crepe": {
-      "image": "/assets/images/categories/كريب.png",
+      "image": "assets/images/categories/كريب.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/كريب/كريب نوتيلا.png",
+            "image": "assets/images/items/كريب/كريب نوتيلا.png",
             "name": "كريب نوتيلا",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/كريب/فوتوشيني كريب.png",
+            "image": "assets/images/items/كريب/فوتوشيني كريب.png",
             "name": "فوتوشيني كريب",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/كريب/كريب فواكه.png",
+            "image": "assets/images/items/كريب/كريب فواكه.png",
             "name": "كريب فواكه",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/كريب/كريب كرانشي.png",
+            "image": "assets/images/items/كريب/كريب كرانشي.png",
             "name": "كريب كرانشي",
             "price": "7.000"
          },
          {
-            "image": "/assets/images/items/كريب/باوش كريب.png",
+            "image": "assets/images/items/كريب/باوش كريب.png",
             "name": "باوش كريب",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/كريب/كريب براونيز.png",
+            "image": "assets/images/items/كريب/كريب براونيز.png",
             "name": "كريب براونيز",
             "price": "5.000"
          },
          {
-            "image": "/assets/images/items/كريب/كريب اوريو.png",
+            "image": "assets/images/items/كريب/كريب اوريو.png",
             "name": "كريب اوريو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/كريب/كريب بستاشيو.png",
+            "image": "assets/images/items/كريب/كريب بستاشيو.png",
             "name": "كريب بستاشيو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/كريب/كريب مكسرات.png",
+            "image": "assets/images/items/كريب/كريب مكسرات.png",
             "name": "كريب مكسرات",
             "price": "6.000"
          }
@@ -1202,35 +1202,35 @@
       ]
    },
    "waffle": {
-      "image": "/assets/images/categories/وافل.png",
+      "image": "assets/images/categories/وافل.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/وافل/وافل دهب.png",
+            "image": "assets/images/items/وافل/وافل دهب.png",
             "name": "وافل دهب",
             "price": "7.000"
          },
          {
-            "image": "/assets/images/items/وافل/وافل بستاشيو.png",
+            "image": "assets/images/items/وافل/وافل بستاشيو.png",
             "name": "وافل بستاشيو",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/وافل/وافل لوتس.png",
+            "image": "assets/images/items/وافل/وافل لوتس.png",
             "name": "وافل لوتس",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/وافل/وافل نوتيلا.png",
+            "image": "assets/images/items/وافل/وافل نوتيلا.png",
             "name": "وافل نوتيلا",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/وافل/بنانا رول.png",
+            "image": "assets/images/items/وافل/بنانا رول.png",
             "name": "بنانا رول",
             "price": "6.000"
          },
          {
-            "image": "/assets/images/items/وافل/وافل فواكة.png",
+            "image": "assets/images/items/وافل/وافل فواكة.png",
             "name": "وافل فواكة",
             "price": "6.000"
          }
@@ -1249,95 +1249,95 @@
       ]
    },
    "pastries": {
-      "image": "/assets/images/categories/المعجنات.png",
+      "image": "assets/images/categories/المعجنات.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/المعجنات/فاهيتا مع قشقوان.png",
+            "image": "assets/images/items/المعجنات/فاهيتا مع قشقوان.png",
             "name": "فاهيتا مع قشقوان",
             "price": "2.000"
          },
          {
-            "image": "/assets/images/items/المعجنات/جبن متبل.png",
+            "image": "assets/images/items/المعجنات/جبن متبل.png",
             "name": "جبن متبل",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/سجق.png",
+            "image": "assets/images/items/المعجنات/سجق.png",
             "name": "سجق",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/قشقوان موزريلا.png",
+            "image": "assets/images/items/المعجنات/قشقوان موزريلا.png",
             "name": "قشقوان موزريلا",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/شيش طاووق.png",
+            "image": "assets/images/items/المعجنات/شيش طاووق.png",
             "name": "شيش طاووق",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/جبن كيري.png",
+            "image": "assets/images/items/المعجنات/جبن كيري.png",
             "name": "جبن كيري",
             "price": "1.000"
          },
          {
-            "image": "/assets/images/items/المعجنات/لحم بعجين.png",
+            "image": "assets/images/items/المعجنات/لحم بعجين.png",
             "name": "لحم بعجين",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/مكسيكانو.png",
+            "image": "assets/images/items/المعجنات/مكسيكانو.png",
             "name": "مكسيكانو",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/ميني بيتزا.png",
+            "image": "assets/images/items/المعجنات/ميني بيتزا.png",
             "name": "ميني بيتزا",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/جبن فيتا.png",
+            "image": "assets/images/items/المعجنات/جبن فيتا.png",
             "name": "جبن فيتا",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/لحم مع جبن.png",
+            "image": "assets/images/items/المعجنات/لحم مع جبن.png",
             "name": "لحم مع جبن",
             "price": "2.000"
          },
          {
-            "image": "/assets/images/items/المعجنات/ميني ببروني.png",
+            "image": "assets/images/items/المعجنات/ميني ببروني.png",
             "name": "ميني ببروني",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/زعتر.png",
+            "image": "assets/images/items/المعجنات/زعتر.png",
             "name": "زعتر",
             "price": "1.000"
          },
          {
-            "image": "/assets/images/items/المعجنات/شاورما دجاج.png",
+            "image": "assets/images/items/المعجنات/شاورما دجاج.png",
             "name": "شاورما دجاج",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/سجق مع جبن.png",
+            "image": "assets/images/items/المعجنات/سجق مع جبن.png",
             "name": "سجق مع جبن",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/زيتون مع جبن.png",
+            "image": "assets/images/items/المعجنات/زيتون مع جبن.png",
             "name": "زيتون مع جبن",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/جبن عكاوي.png",
+            "image": "assets/images/items/المعجنات/جبن عكاوي.png",
             "name": "جبن عكاوي",
             "price": "1.500"
          },
          {
-            "image": "/assets/images/items/المعجنات/محمرة.png",
+            "image": "assets/images/items/المعجنات/محمرة.png",
             "name": "محمرة",
             "price": "1.000"
          }
