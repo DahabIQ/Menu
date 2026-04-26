@@ -946,7 +946,7 @@
       "image": "/assets/images/categories/البيتــــزا.png",
       "grid_items": [
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا مـــرغريتـــا.png",
+            "image": "/assets/images/items/البيتــــزا/بيتزا مـــــرغريتـــا.png",
             "name": "بيتزا مرغريتا",
             "prices": {
                "صغير": "8.000",
@@ -982,7 +982,7 @@
             }
          },
          {
-            "image": "/assets/images/items/البيتــــزا/بيتزا ببرونـــــــــــي.png",
+            "image": "/assets/images/items/البيتــــزا/بيتزا ببرونـــــــــي.png",
             "name": "بيتزا ببروني",
             "prices": {
                "صغير": "8.000",
