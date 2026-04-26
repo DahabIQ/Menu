@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ذهبي - حلويات ومعجنات</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ed703c',
+                        textMain: '#2d3748',
+                        bgLight: '#f4f4f4',
+                        gold: '#d49b38',
+                        brownText: '#7b4c24'
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #f4f4f4; overflow-x: hidden; }
+        
+        /* SPA Screen Transitions */
+        .app-page { 
+            display: none; 
+            min-height: 100vh; 
+            flex-direction: column; 
+            opacity: 0; 
+            transition: opacity 0.3s ease-in-out; 
+        }
+        .app-page.active { display: flex; opacity: 1; }
+        
+        /* Clean Scrollbar */
+        ::-webkit-scrollbar { width: 4px; background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
+    </style>
+</head>
+<body class="text-textMain">
+
+    <!-- ========================================== -->
+    <!-- 1. SPLASH SCREEN -->
+    <!-- ========================================== -->
+    <div id="page-splash" class="app-page active bg-white justify-center items-center h-screen">
+        <div class="flex flex-col items-center text-center animate-pulse">
+            <div class="relative w-48 h-32 flex items-center justify-center mb-4">
+                <svg class="absolute top-0 right-4 w-24 h-24 text-yellow-500 opacity-80" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path></svg>
+                <span class="text-7xl md:text-8xl font-bold text-gold z-10" style="font-family: serif;">ذهبي</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-brownText mt-2 tracking-wide">حلويات ومعجنات</h1>
+            <p class="text-xl md:text-2xl text-brownText mt-1" style="font-family: serif;">Sweets and Pastries</p>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 2. CATEGORIES SCREEN -->
+    <!-- ========================================== -->
+    <div id="page-categories" class="app-page">
+        <!-- Header -->
+        <header class="p-6 flex justify-between items-center max-w-7xl mx-auto w-full">
+            <button class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow hover:bg-orange-600 transition">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </header>
+
+        <main class="flex-1 px-6 pb-12 max-w-7xl mx-auto w-full">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-black mb-6">الأقسام</h2>
+            <!-- Dynamically populated categories -->
+            <div id="categories-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                <!-- Javascript will inject categories here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 3. DYNAMIC PRODUCTS SCREEN -->
+    <!-- ========================================== -->
+    <div id="page-products" class="app-page">
+        <!-- Sticky App Bar -->
+        <header class="bg-primary shadow-md sticky top-0 z-50">
+            <div class="px-4 py-4 flex justify-between items-center text-white max-w-7xl mx-auto w-full">
+                <!-- Hamburger Menu -->
+                <button class="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-sm hover:bg-gray-100 transition">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+                
+                <!-- Dynamic Title -->
+                <h1 id="products-title" class="text-2xl md:text-3xl font-bold tracking-widest text-center flex-1">...</h1>
+                
+                <!-- Back Button -->
+                <button onclick="navTo('page-categories')" class="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-white/20 transition">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="flex-1 p-4 md:p-6 max-w-7xl mx-auto w-full">
+            <!-- Dynamic Grid Items (Images) -->
+            <div id="products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+                <!-- Javascript will inject grid cards here -->
+            </div>
+
+            <!-- Dynamic List Items (Text Rows & Subcategories) -->
+            <div id="products-list">
+                <!-- Javascript will inject list items here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- DATA FETCHING & APP LOGIC -->
+    <!-- ========================================== -->
+    <script>
+        // Mapping JSON keys to Arabic display names
+        const categoryTitles = {
+            cakes: "الكيك", pide: "البيــــدا", hot_drinks: "المشروبات الساخنة",
+            kunafa: "الكنافة", cold_drinks: "المشروبات الباردة",
+            cheesecake: "تشيز كيك", donuts: "دونـــــات", croissant: "كرواسون",
+            brownies: "براونيز", smoothie: "سموزي", egyptian_dishes: "الأطباق المصرية",
+            pizza: "البيتــــزا", pancakes: "بـــان كيك", milkshake: "ميلك شيك",
+            crepe: "كريب", waffle: "وافل", pastries: "المعجنات"
+        };
+
+        let appData = {};
+
+        // 1. Initialize the App
+        async function initApp() {
+            try {
+                // Fetch the JSON file
+                const response = await fetch('assets/data.json');
+                if (!response.ok) throw new Error("File not found or network error.");
+                
+                appData = await response.json();
+                renderCategories();
+                
+                // After 2.5 seconds, hide splash and show categories
+                setTimeout(() => { navTo('page-categories'); }, 2500);
+
+            } catch (error) {
+                console.error("Error loading JSON data:", error);
+                document.getElementById('page-splash').innerHTML = `
+                    <div class="text-red-500 text-center px-4">
+                        <h2 class="text-2xl font-bold mb-2">خطأ في التحميل</h2>
+                        <p>تعذر تحميل بيانات القائمة من assets/data.json</p>
+                        <p class="text-sm mt-2 text-gray-500">تأكد من تشغيل الموقع عبر خادم محلي (Localhost/Live Server)</p>
+                    </div>
+                `;
+            }
+        }
+
+        // 2. Render Categories Menu
+        function renderCategories() {
+            const container = document.getElementById('categories-grid');
+            container.innerHTML = '';
+            
+            Object.keys(appData).forEach(catKey => {
+                const cat = appData[catKey];
+                const title = categoryTitles[catKey] || catKey;
+                
+                // Use the image from JSON, fallback to a placeholder if missing
+                const imgSrc = cat.image ? cat.image : `https://placehold.co/400x400/eeeeee/ed703c?text=${encodeURIComponent(title)}`;
+                
+                const card = document.createElement('div');
+                card.className = "relative w-full aspect-square rounded-3xl overflow-hidden shadow cursor-pointer group border-4 border-transparent hover:border-primary transition-all bg-white";
+                card.onclick = () => openCategory(catKey);
+                
+                card.innerHTML = `
+                    <img src="${imgSrc}" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="${title}" onerror="this.src='https://placehold.co/400x400/eeeeee/ed703c?text=الصورة+غير+متاحة'">
+                    <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm rounded-xl py-2 text-center shadow">
+                        <span class="text-sm md:text-lg font-bold text-black">${title}</span>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // 3. Open a specific category and render its products
+        function openCategory(catKey) {
+            const cat = appData[catKey];
+            const title = categoryTitles[catKey] || catKey;
+            
+            // Set Page Title
+            document.getElementById('products-title').innerText = title;
+            
+            // Render Grids (Images)
+            const gridContainer = document.getElementById('products-grid');
+            gridContainer.innerHTML = '';
+            
+            if (cat.grid_items && cat.grid_items.length > 0) {
+                gridContainer.style.display = 'grid';
+                cat.grid_items.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = "bg-white rounded-2xl overflow-hidden shadow hover:shadow-lg transition-shadow flex flex-col group cursor-pointer";
+                    
+                    const imgSrc = item.image ? item.image : 'https://placehold.co/400x300/eeeeee/ed703c?text=صورة+غير+متاحة';
+                    
+                    let contentHTML = '';
+                    
+                    // Handle Pizza Multiple Prices Layout
+                    if (item.prices) {
+                        const sizes = Object.keys(item.prices); // e.g. ["صغير", "وسط", "كبير"]
+                        const sizeHeaders = sizes.map(s => `<div class="text-center font-medium">${s}</div>`).join('');
+                        const sizePrices = sizes.map(s => `<div class="text-center font-bold text-primary">${item.prices[s]}</div>`).join('');
+                        
+                        contentHTML = `
+                            <div class="bg-primary text-white text-center py-1.5 font-bold text-sm md:text-base">${item.name}</div>
+                            <div class="p-2 flex flex-col mt-auto bg-orange-50/30">
+                                <div class="grid grid-cols-${sizes.length} gap-1 text-xs text-gray-500 mb-1">${sizeHeaders}</div>
+                                <div class="grid grid-cols-${sizes.length} gap-1 text-sm">${sizePrices}</div>
+                            </div>
+                        `;
+                    } 
+                    // Handle Standard Single Price Layout
+                    else {
+                        contentHTML = `
+                            <div class="p-3 flex justify-between items-center mt-auto">
+                                <span class="text-sm md:text-base font-bold text-black">${item.name}</span>
+                                <span class="text-sm font-bold text-primary">${item.price}</span>
+                            </div>
+                        `;
+                    }
+                    
+                    card.innerHTML = `
+                        <div class="h-40 md:h-56 w-full overflow-hidden bg-gray-100">
+                            <img src="${imgSrc}" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${item.name}" onerror="this.src='https://placehold.co/400x300/eeeeee/ed703c?text=بدون+صورة'">
+                        </div>
+                        ${contentHTML}
+                    `;
+                    gridContainer.appendChild(card);
+                });
+            } else {
+                gridContainer.style.display = 'none';
+            }
+            
+            // Render Lists (Text Rows & Grouped Subcategories)
+            const listContainer = document.getElementById('products-list');
+            listContainer.innerHTML = '';
+            
+            if (cat.list_items && cat.list_items.length > 0) {
+                listContainer.style.display = 'block';
+                
+                // Group items by subcategory
+                const groups = {};
+                cat.list_items.forEach(item => {
+                    const sub = item.subcategory || 'default';
+                    if (!groups[sub]) groups[sub] = [];
+                    groups[sub].push(item);
+                });
+                
+                let listHTML = '';
+                for (const [sub, items] of Object.entries(groups)) {
+                    // Add Subcategory Header
+                    if (sub !== 'default') {
+                        listHTML += `
+                            <div class="flex items-center justify-start mt-8 mb-4 border-b-2 border-primary/20 pb-2">
+                                <h3 class="text-xl md:text-2xl font-bold text-primary">${sub}</h3>
+                            </div>
+                        `;
+                    }
+                    
+                    // Add Rows wrapper
+                    listHTML += '<div class="bg-white rounded-3xl p-4 md:p-6 shadow-sm border border-gray-100 flex flex-col gap-1">';
+                    
+                    items.forEach(item => {
+                        let priceStr = '';
+                        // Handle multiple prices inside a list item (like Pizzas)
+                        if (item.prices) {
+                            priceStr = Object.entries(item.prices).map(([sz, pr]) => `
+                                <div class="flex flex-col items-center mx-3 border-l border-gray-200 pl-3 last:border-0">
+                                    <span class="text-xs text-gray-400 font-normal">${sz}</span>
+                                    <span class="font-bold text-primary">${pr}</span>
+                                </div>
+                            `).join('');
+                            priceStr = `<div class="flex justify-end">${priceStr}</div>`;
+                        } else {
+                            priceStr = `<span class="font-bold text-primary text-base md:text-lg">${item.price}</span>`;
+                        }
+                        
+                        let unitStr = item.unit ? `<span class="text-primary text-xs mr-2 font-bold">${item.unit}</span>` : '';
+                        
+                        listHTML += `
+                            <div class="flex justify-between items-center py-3 border-b border-gray-50 last:border-0 hover:bg-gray-50 px-2 rounded transition-colors cursor-pointer">
+                                <span class="font-semibold text-gray-700 text-sm md:text-base">${item.name} ${unitStr}</span>
+                                ${priceStr}
+                            </div>
+                        `;
+                    });
+                    
+                    listHTML += '</div>';
+                }
+                listContainer.innerHTML = listHTML;
+            } else {
+                listContainer.style.display = 'none';
+            }
+            
+            // Navigate to Products Screen
+            navTo('page-products');
+        }
+
+        // 4. Page Navigation System
+        function navTo(targetId) {
+            const pages = document.querySelectorAll('.app-page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+                setTimeout(() => {
+                    if(!page.classList.contains('active')) {
+                        page.style.display = 'none';
+                    }
+                }, 300); // Matches the CSS transition time
+            });
+
+            const targetPage = document.getElementById(targetId);
+            setTimeout(() => {
+                targetPage.style.display = 'flex';
+                // Slight delay to allow display block to apply before changing opacity
+                setTimeout(() => {
+                    targetPage.classList.add('active');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 20);
+            }, 300);
+        }
+
+        // Trigger App Initialization on Load
+        window.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
