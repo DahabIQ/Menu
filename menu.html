@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ذهبي - حلويات ومعجنات</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da291c', /* تم التعديل للون أحمر مشابه للصورة، يمكنك إرجاعه لـ #ed703c إذا أردت */
+                        textMain: '#2d3748',
+                        bgLight: '#f4f4f4',
+                        gold: '#d49b38',
+                        brownText: '#7b4c24'
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #f4f4f4; overflow: hidden; } /* منع التمرير للصفحة بالكامل */
+        
+        /* تأثيرات التنقل */
+        .app-page { 
+            display: none; 
+            height: 100vh; 
+            width: 100vw;
+            opacity: 0; 
+            transition: opacity 0.4s ease-in-out; 
+        }
+        .app-page.active { display: flex; opacity: 1; }
+        
+        /* إخفاء شريط التمرير للشريط الجانبي */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* تجميل شريط التمرير للمحتوى الرئيسي */
+        .main-scroll::-webkit-scrollbar { width: 6px; background: transparent; }
+        .main-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="text-textMain">
+
+    <!-- ========================================== -->
+    <!-- 1. شاشة البداية (Splash Screen) -->
+    <!-- ========================================== -->
+    <div id="page-splash" class="app-page active bg-white flex-col justify-center items-center">
+        <div class="flex flex-col items-center text-center animate-pulse">
+            <div class="relative w-48 h-32 flex items-center justify-center mb-4">
+                <img src="assets/images/logo.png" width="300" alt="ذهبي" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <!-- بديل في حال عدم وجود اللوجو -->
+                <span style="display: none;" class="text-7xl md:text-8xl font-bold text-gold z-10 font-serif">ذهبي</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-brownText mt-2 tracking-wide">حلويات ومعجنات</h1>
+            <p class="text-xl md:text-2xl text-brownText mt-1" style="font-family: serif;">Sweets and Pastries</p>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 2. الشاشة الرئيسية (Sidebar + Content) -->
+    <!-- ========================================== -->
+    <div id="page-menu" class="app-page flex-col md:flex-row bg-gray-50">
+        
+        <!-- الشريط الجانبي (Sidebar) -->
+        <!-- أفقي في الجوال، وعمودي في التابلت والكمبيوتر -->
+        <aside class="w-full md:w-28 lg:w-36 bg-primary text-white flex md:flex-col overflow-x-auto md:overflow-y-auto no-scrollbar shadow-xl z-20 shrink-0 border-l border-black/10">
+            <!-- مساحة اللوجو المصغر (يظهر فقط في الشاشات الكبيرة) -->
+            <div class="hidden md:flex items-center justify-center py-6 border-b border-white/10">
+                <span class="text-2xl font-bold text-white tracking-wider">المنيو</span>
+            </div>
+            
+            <!-- سيتم حقن أزرار الأقسام هنا -->
+            <div id="sidebar-items" class="flex md:flex-col w-max md:w-full">
+            </div>
+        </aside>
+
+        <!-- المحتوى الرئيسي (Main Content) -->
+        <main class="flex-1 flex flex-col h-full overflow-hidden bg-gray-100">
+            <!-- الهيدر -->
+            <header class="bg-white shadow-sm px-6 py-4 flex justify-between items-center z-10 shrink-0">
+                <h1 id="products-title" class="text-2xl md:text-3xl font-bold text-gray-800 tracking-wide">...</h1>
+            </header>
+            
+            <!-- مساحة عرض المنتجات قابلة للتمرير -->
+            <div id="category-content-container" class="flex-1 overflow-y-auto main-scroll p-4 md:p-6 pb-24">
+                <!-- سيتم حقن المنتجات هنا -->
+            </div>
+        </main>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- الجافاسكربت -->
+    <!-- ========================================== -->
+    <script>
+        // العناوين المعروضة
+        const categoryTitles = {
+            cakes: "الكيك", pide: "البيــــدا", hot_drinks: "مشروبات ساخنة",
+            kunafa: "الكنافة", cold_drinks: "مشروبات باردة",
+            cheesecake: "تشيز كيك", donuts: "دونـــــات", croissant: "كرواسون",
+            brownies: "براونيز", smoothie: "سموزي", egyptian_dishes: "أطباق مصرية",
+            pizza: "البيتــــزا", pancakes: "بـــان كيك", milkshake: "ميلك شيك",
+            crepe: "كريب", waffle: "وافل", pastries: "المعجنات"
+        };
+
+        // دالة لإرجاع أيقونة SVG مناسبة لكل قسم (بناءً على الصورة المرفقة)
+        function getIconForCategory(key) {
+            const icons = {
+                hot_drinks: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 8h-2M4 8h12M4 8a4 4 0 014-4h4a4 4 0 014 4M4 8v6a4 4 0 004 4h4a4 4 0 004-4V8M8 4v-1m4 1v-1m4 1v-1"/></svg>`,
+                cold_drinks: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 4v16m4-16v16M4 8h16M5 8l1 12a2 2 0 002 2h8a2 2 0 002-2l1-12"/></svg>`,
+                milkshake: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 4h8M9 4v16a1 1 0 001 1h4a1 1 0 001-1V4M12 4V1m0 0a2 2 0 100 4 2 2 0 000-4z"/></svg>`,
+                cakes: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15a2 2 0 01-2 2H5a2 2 0 01-2-2m18 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v6m18 0a2 2 0 00-2-2H5a2 2 0 00-2 2m5-6V5a2 2 0 012-2h0a2 2 0 012 2v2"/></svg>`,
+                pizza: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-20v10l8.66 5M15 9h.01M10 14h.01M16 15h.01"/></svg>`,
+                default: `<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>`
+            };
+            // تعيين أيقونات افتراضية بناءً على نوع القسم
+            if(key.includes('drink') || key === 'smoothie') return icons.cold_drinks;
+            if(key === 'hot_drinks') return icons.hot_drinks;
+            if(key === 'milkshake') return icons.milkshake;
+            if(key === 'pizza' || key === 'pide') return icons.pizza;
+            if(key === 'cakes' || key === 'cheesecake' || key === 'donuts' || key === 'brownies') return icons.cakes;
+            
+            return icons.default;
+        }
+
+        let appData = {};
+        let currentActiveCategory = null;
+
+        // 1. بدء التشغيل
+        async function initApp() {
+            try {
+                const response = await fetch('assets/data.json');
+                if (!response.ok) throw new Error("ملف data.json غير موجود");
+                
+                appData = await response.json();
+                renderSidebar();
+                
+                // فتح أول قسم بشكل افتراضي
+                const firstCategory = Object.keys(appData)[0];
+                if(firstCategory) openCategory(firstCategory);
+                
+                // إخفاء الـ Splash والظهور
+                setTimeout(() => { navTo('page-menu'); }, 2500);
+
+            } catch (error) {
+                console.error(error);
+                document.getElementById('page-splash').innerHTML = `
+                    <div class="text-red-500 text-center px-4">
+                        <h2 class="text-2xl font-bold mb-2">خطأ في التحميل</h2>
+                        <p>تعذر تحميل بيانات القائمة</p>
+                    </div>
+                `;
+            }
+        }
+
+        // 2. رسم الشريط الجانبي (Sidebar)
+        function renderSidebar() {
+            const container = document.getElementById('sidebar-items');
+            container.innerHTML = '';
+            
+            Object.keys(appData).forEach(catKey => {
+                const title = categoryTitles[catKey] || catKey;
+                const iconSVG = getIconForCategory(catKey);
+                
+                const btn = document.createElement('button');
+                btn.id = `btn-${catKey}`;
+                // تصميم الزر يشبه الصورة (أيقونة + نص تحته)
+                btn.className = `min-w-[90px] md:min-w-full md:w-full p-3 md:py-5 flex flex-col items-center justify-center gap-2 border-b border-white/10 transition-all duration-200`;
+                btn.onclick = () => openCategory(catKey);
+                
+                btn.innerHTML = `
+                    <div class="opacity-90 icon-container">${iconSVG}</div>
+                    <span class="text-xs md:text-sm font-bold text-center leading-tight">${title}</span>
+                `;
+                container.appendChild(btn);
+            });
+        }
+
+        // 3. عرض المنتجات الخاصة بالقسم
+        function openCategory(catKey) {
+            const cat = appData[catKey];
+            const title = categoryTitles[catKey] || catKey;
+            
+            // --- تفعيل شكل الزر الجانبي ---
+            if (currentActiveCategory) {
+                const oldBtn = document.getElementById(`btn-${currentActiveCategory}`);
+                if (oldBtn) {
+                    oldBtn.classList.remove('bg-gray-100', 'text-primary');
+                    oldBtn.classList.add('text-white', 'hover:bg-white/10');
+                }
+            }
+            const newBtn = document.getElementById(`btn-${catKey}`);
+            if (newBtn) {
+                newBtn.classList.remove('text-white', 'hover:bg-white/10');
+                newBtn.classList.add('bg-gray-100', 'text-primary'); // يجعل الزر النشط أبيض/رمادي ليتصل بالمحتوى
+                // عمل تمرير للزر ليكون مرئياً في الجوال
+                newBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            }
+            currentActiveCategory = catKey;
+
+            // --- تحديث العنوان الرئيسي ---
+            document.getElementById('products-title').innerText = title;
+            
+            // --- توليد المحتوى ---
+            const mainContainer = document.getElementById('category-content-container');
+            mainContainer.innerHTML = '';
+            // التمرير لأعلى الصفحة عند التبديل
+            mainContainer.scrollTop = 0;
+            
+            const groups = new Map();
+            const getGroup = (sub) => {
+                const key = sub || 'default';
+                if (!groups.has(key)) groups.set(key, { grid: [], list: [] });
+                return groups.get(key);
+            };
+            
+            if (cat.grid_items) cat.grid_items.forEach(item => getGroup(item.subcategory).grid.push(item));
+            if (cat.list_items) cat.list_items.forEach(item => getGroup(item.subcategory).list.push(item));
+            
+            groups.forEach((data, subName) => {
+                // العناوين الفرعية
+                if (subName !== 'default') {
+                    const header = document.createElement('div');
+                    header.className = "flex items-center justify-start mt-6 mb-4 border-b-2 border-primary/20 pb-2";
+                    header.innerHTML = `<h3 class="text-xl font-bold text-primary">${subName}</h3>`;
+                    mainContainer.appendChild(header);
+                }
+                
+                // الشبكات (Grid Items)
+                if (data.grid.length > 0) {
+                    const gridDiv = document.createElement('div');
+                    // تعديل الأعمدة لتناسب وجود الشريط الجانبي
+                    gridDiv.className = "grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-5 mb-8";
+                    
+                    data.grid.forEach(item => {
+                        const card = document.createElement('div');
+                        card.className = "bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col border border-gray-100 relative group";
+                        
+                        const imgSrc = item.image ? item.image : `https://placehold.co/400x300/eeeeee/da291c?text=${encodeURIComponent(item.name)}`;
+                        let contentHTML = '';
+                        
+                        if (item.prices) {
+                            const sizes = Object.keys(item.prices);
+                            const sizeHeaders = sizes.map(s => `<div class="text-center font-medium">${s}</div>`).join('');
+                            const sizePrices = sizes.map(s => `<div class="text-center font-bold text-primary">${item.prices[s]}</div>`).join('');
+                            
+                            contentHTML = `
+                                <div class="bg-primary text-white text-center py-1.5 font-bold text-sm truncate px-1">${item.name}</div>
+                                <div class="p-2 flex flex-col mt-auto bg-red-50/30">
+                                    <div class="grid gap-1 text-[11px] text-gray-500 mb-1" style="grid-template-columns: repeat(${sizes.length}, minmax(0, 1fr));">${sizeHeaders}</div>
+                                    <div class="grid gap-1 text-sm" style="grid-template-columns: repeat(${sizes.length}, minmax(0, 1fr));">${sizePrices}</div>
+                                </div>
+                            `;
+                        } else {
+                            // التصميم الشبيه بالصورة المرفقة (اسم الصنف والسعر في مربع أحمر أو واضح)
+                            contentHTML = `
+                                <div class="p-3 flex justify-between items-center mt-auto bg-white border-t border-gray-50 z-10">
+                                    <span class="text-sm font-bold text-gray-800 line-clamp-1">${item.name}</span>
+                                    <span class="text-sm font-bold text-primary bg-red-50 px-2 py-1 rounded-lg whitespace-nowrap">${item.price}</span>
+                                </div>
+                            `;
+                        }
+                        
+                        card.innerHTML = `
+                            <div class="h-36 md:h-48 w-full overflow-hidden bg-gray-50 relative">
+                                <img src="${imgSrc}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="${item.name}" onerror="this.src='https://placehold.co/400x300/eeeeee/da291c?text=صورة'">
+                            </div>
+                            ${contentHTML}
+                        `;
+                        gridDiv.appendChild(card);
+                    });
+                    
+                    mainContainer.appendChild(gridDiv);
+                }
+                
+                // القوائم النصية (List Items)
+                if (data.list.length > 0) {
+                    const listDiv = document.createElement('div');
+                    listDiv.className = "bg-white rounded-2xl p-4 shadow-sm border border-gray-100 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-1 mb-8";
+                    
+                    data.list.forEach(item => {
+                        let priceStr = '';
+                        if (item.prices) {
+                            priceStr = Object.entries(item.prices).map(([sz, pr]) => `
+                                <div class="flex flex-col items-center mx-2 border-l border-gray-200 pl-2 last:border-0">
+                                    <span class="text-[10px] text-gray-400 font-normal">${sz}</span>
+                                    <span class="font-bold text-primary text-sm">${pr}</span>
+                                </div>
+                            `).join('');
+                            priceStr = `<div class="flex justify-end">${priceStr}</div>`;
+                        } else {
+                            priceStr = `<span class="font-bold text-primary text-base whitespace-nowrap mr-4 bg-red-50 px-3 py-1 rounded-lg">${item.price}</span>`;
+                        }
+                        
+                        const unitStr = item.unit ? `<span class="text-gray-400 text-xs mr-1 font-bold">(${item.unit})</span>` : '';
+                        
+                        const row = document.createElement('div');
+                        row.className = "flex justify-between items-center py-3 border-b border-gray-50 last:border-0 hover:bg-gray-50 px-2 rounded-lg transition-colors cursor-pointer";
+                        row.innerHTML = `
+                            <span class="font-semibold text-gray-700 text-sm leading-tight">${item.name} ${unitStr}</span>
+                            ${priceStr}
+                        `;
+                        listDiv.appendChild(row);
+                    });
+                    
+                    mainContainer.appendChild(listDiv);
+                }
+            });
+        }
+
+        // 4. الانتقال بين الشاشات
+        function navTo(targetId) {
+            const pages = document.querySelectorAll('.app-page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+                setTimeout(() => { if(!page.classList.contains('active')) page.style.display = 'none'; }, 400);
+            });
+
+            const targetPage = document.getElementById(targetId);
+            setTimeout(() => {
+                targetPage.style.display = 'flex';
+                setTimeout(() => { targetPage.classList.add('active'); }, 20);
+            }, 400);
+        }
+
+        window.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
